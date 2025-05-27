@@ -12,7 +12,12 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection  with MongoDB
-mongoose.connect("mongodb+srv://manikantakasa1436:PQFUKIYDen38eZ9n@cluster0.mmibfrf.mongodb.net/e-commerce")
+mongoose.connect("mongodb://127.0.0.1:27017/ecommerce", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+
+
 
 // API Creation 
 
